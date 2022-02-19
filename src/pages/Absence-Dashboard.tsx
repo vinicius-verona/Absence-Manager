@@ -1,8 +1,7 @@
-import { useState } from "react";
-import { getMembers } from "./data/members";
-import { getAbsences } from "./data/absences";
+import { getMembers } from "../data/members";
+import { getAbsences } from "../data/absences";
 
-function App() {
+export default function AbsenceDashboard() {
     return (
         <>
             <h1>Hello World!</h1>
@@ -14,5 +13,3 @@ function App() {
         </>
     );
 }
-
-export default App;
