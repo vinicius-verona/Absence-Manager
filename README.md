@@ -25,4 +25,4 @@ npm install # To install project dependencies
 npm run dev # To run the project locally
 ```
 
--   Then, on your preferred browser, access [http://localhost:3000](http://localhost:3000) to see the result.
+-   Then, on your browser, access [http://localhost:3000](http://localhost:3000) to see the result.
