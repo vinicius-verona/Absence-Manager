@@ -6,6 +6,7 @@ export default createGlobalStyle`
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
   }
+
   ::-webkit-scrollbar-track{
     background: ${theme.palettes.primary};
   }
@@ -17,8 +18,9 @@ export default createGlobalStyle`
     background: ${theme.palettes.light};
   }
   ::-webkit-scrollbar-thumb:hover{
-    background: ${theme.palettes.primary};
+    background: ${theme.palettes.darkerLight};
   }
+
   * {
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
@@ -30,6 +32,7 @@ export default createGlobalStyle`
     background-color: white /*${theme.palettes.light}*/;
     font-family: 'Source Sans Pro', sans-serif;
   }
+  
   a {
     text-decoration: none;
   }

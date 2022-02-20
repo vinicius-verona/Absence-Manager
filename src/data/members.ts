@@ -22,3 +22,5 @@ export function getMembers() {
 
     return members;
 }
+
+export const MEMBERS = getMembers();
