@@ -1,6 +1,6 @@
 import _absences from "./absences.json";
 
-type Absence = {
+export type Absence = {
     admitterId: number | null;
     admitterNote: string;
     confirmedAt: Date | null;
