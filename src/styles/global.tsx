@@ -14,7 +14,7 @@ export default createGlobalStyle`
     background: ${theme.palettes.primary};
   }
   ::-webkit-scrollbar-thumb{
-    background: ${theme.palettes.primary};
+    background: ${theme.palettes.light};
   }
   ::-webkit-scrollbar-thumb:hover{
     background: ${theme.palettes.primary};
@@ -27,7 +27,7 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: ${theme.palettes.light};
+    background-color: white /*${theme.palettes.light}*/;
     font-family: 'Source Sans Pro', sans-serif;
   }
   a {

@@ -1,6 +1,6 @@
 import _members from "./members.json";
 
-type Member = {
+export type Member = {
     crewId: number;
     id: number;
     image: string;
