@@ -5,6 +5,7 @@ export const TextArea = styled.textarea`
   resize: none;
   rows: 10;
   readonly: true;
+  border-radius: 10px;
 `;
 
 export const NoteWrapper = styled.div`
