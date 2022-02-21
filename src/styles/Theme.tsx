@@ -5,5 +5,6 @@ export default {
         lightPrimary: "rgba(255, 148, 25, 0.5)",
         light: "#DFDFDF",
         darkerLight: "#B5B5B5",
+        bg_dark: "rgba(0, 0, 0, 0.5)",
     },
 };
