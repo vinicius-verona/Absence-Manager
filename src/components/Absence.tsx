@@ -3,11 +3,12 @@ import {
   CloseBttn,
   Container,
   Header,
+  Message,
   Modal,
   TextDiv,
 } from "../styles/Absence";
 import { Absence } from "../data/absences";
-import { MEMBERS } from "../data/members";
+import { Member, MEMBERS } from "../data/members";
 import NoteContainer from "./NoteContainer";
 import Status from "./Status";
 
@@ -32,16 +33,9 @@ export default function AbsenceInfo(props: InfoCard) {
     props.onChange();
   };
 
-  const sleep = (ms: any) => {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  };
-
-  const test = async () => {
-    await sleep(3000);
+  const close = async () => {
     onChange();
   };
-
-  // test();
 
   let absence = props.absence;
   if (!absence) {
@@ -60,29 +54,22 @@ export default function AbsenceInfo(props: InfoCard) {
       <AbsenceCard key={_id + "-Card"}>
         <Header>
           <h2 key={_id + "-CardTitle"}>Absence {_id}</h2>
-          <CloseBttn key={_id + "-Bttn"}>&times;</CloseBttn>
+          <CloseBttn key={_id + "-Bttn"} onClick={close}>
+            &times;
+          </CloseBttn>
         </Header>
 
         <Container key={_id + "-Info"}>
           <Text label={"Member: "} content={member.name} />
           <Text label={"User ID: "} content={member.userId} />
           <Text label={"Type: "} content={absence.type} />
-
           <Text label={"Start Date: "} content={absence.startDate} />
           <Text label={"End Date: "} content={absence.endDate} />
 
           <Status content={absence.status} />
-
-          {absence.memberNote.length > 0 && (
-            <NoteContainer label={"Member Note"} content={absence.memberNote} />
-          )}
-          {absence.admitterNote.length > 0 && (
-            <NoteContainer
-              label={"Admitter Note"}
-              content={absence.admitterNote}
-            />
-          )}
         </Container>
+
+        <MsgContainer absence={absence} />
       </AbsenceCard>
     </Modal>
   );
@@ -112,5 +99,38 @@ const Text = (props: InfoType) => {
       </label>
       <p>{props.content}</p>
     </TextDiv>
+  );
+};
+
+type MsgInfo = {
+  absence: Absence;
+};
+
+const MsgContainer = (props: MsgInfo) => {
+  let className = "";
+
+  if (!props.absence.memberNote || !props.absence.admitterNote) {
+    className = "centered";
+  }
+
+  return (
+    <Message className={className}>
+      {props.absence.memberNote.length > 0 && (
+        <div>
+          <NoteContainer
+            label={"Member Note"}
+            content={props.absence.memberNote}
+          />
+        </div>
+      )}
+      {props.absence.admitterNote.length > 0 && (
+        <div>
+          <NoteContainer
+            label={"Admitter Note"}
+            content={props.absence.admitterNote}
+          />
+        </div>
+      )}
+    </Message>
   );
 };

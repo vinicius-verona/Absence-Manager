@@ -11,9 +11,7 @@ export default function NoteContainer(props: NoteContent) {
       <label>
         <strong>{props.label}</strong>
       </label>
-      <TextArea readOnly={true} rows={5}>
-        {props.content}
-      </TextArea>
+      <TextArea readOnly={true} value={props.content} />
     </NoteWrapper>
   );
 }

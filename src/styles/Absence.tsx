@@ -57,9 +57,13 @@ export const CloseBttn = styled.span`
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
   align-items: center;
   justify-content: center;
+  padding: @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const TextDiv = styled.div`
@@ -70,6 +74,21 @@ export const TextDiv = styled.div`
   margin: 0px;
   padding: 5px 10px;
   p {
+    padding-left: 5px;
+  }
+`;
+
+export const Message = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+
+  div {
+    width: 100%;
+    justify-content: center;
     padding-left: 5px;
   }
 `;
