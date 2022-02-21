@@ -1,7 +1,19 @@
+import { NoteWrapper, TextArea } from "../styles/NoteContainer";
+
 type NoteContent = {
-    content: string;
+  label: string;
+  content: string;
 };
 
-export default function NoteContainer({ content: string }: NoteContent) {
-    return <></>;
+export default function NoteContainer(props: NoteContent) {
+  return (
+    <NoteWrapper>
+      <label>
+        <strong>{props.label}</strong>
+      </label>
+      <TextArea readOnly={true} rows={5}>
+        {props.content}
+      </TextArea>
+    </NoteWrapper>
+  );
 }
