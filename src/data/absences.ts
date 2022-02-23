@@ -3,13 +3,13 @@ import _absences from "./absences.json";
 export type Absence = {
   admitterId: number | null;
   admitterNote: string;
-  confirmedAt: Date | null;
+  confirmedAt: string | null;
   createdAt: string;
   crewId: number;
   endDate: string;
   id: number;
   memberNote: string;
-  rejectedAt: Date | null;
+  rejectedAt: string | null;
   startDate: string;
   type: string;
   userId: number;

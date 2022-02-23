@@ -57,3 +57,9 @@ export const Dashboard = styled.div`
     cursor: pointer;
   }
 `;
+
+export const Content = styled.div`
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+`;
