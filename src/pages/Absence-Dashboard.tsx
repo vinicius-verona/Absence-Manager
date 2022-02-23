@@ -34,10 +34,10 @@ export default function AbsenceDashboard() {
         getRange(filtered_absences, offset, offset + items_per_page)
       )
     );
-    setAbsencesLength(filtered_absences.size);
+
     setPages(Math.ceil(absences_length / items_per_page));
     setLoading(false);
-  }, [offset, items_per_page, filtered_absences]);
+  }, [offset, items_per_page, filtered_absences, absences_length]);
 
   const changePage = (props: { selected: number }) => {
     setOffset((props.selected * items_per_page) % absences_length);
@@ -49,10 +49,10 @@ export default function AbsenceDashboard() {
     setPages(Math.ceil(absences_length / items_per_page));
   };
 
-  const filterDashboard = (_absences: Map<number, Absence>) => {
+  const filterDashboard = async (_absences: Map<number, Absence>) => {
     setFilteredAbsences(_absences);
     setAbsencesLength(_absences.size);
-    changePage({ selected: 0 });
+    setOffset(0);
   };
 
   return (

@@ -27,6 +27,7 @@ const selectedOptions: FilterOptions = {
   endingDate: null,
 };
 export default function Filter(props: FilterType) {
+  console.log("################# FILTER #################");
   const pagesOptions = [
     { value: 10, label: "10 per page" },
     { value: 25, label: "25 per page" },
@@ -72,13 +73,6 @@ export default function Filter(props: FilterType) {
 
     let items = filterAbsences(selectedOptions);
     props.filterItems(new Map(items));
-
-    // if (selected.length) {
-    //     selectedOptions.status = selected;
-    // }
-
-    // console.log("Status Selected = " + items.length);
-    // console.log("Status = " + JSON.stringify(selectedOptions));
   };
 
   const filterStartDate = (selected: any) => {
@@ -88,13 +82,6 @@ export default function Filter(props: FilterType) {
 
     let items = filterAbsences(selectedOptions);
     props.filterItems(new Map(items));
-
-    // if (selected.length) {
-    //     selectedOptions.startingDate = selected;
-    // }
-
-    // console.log("StartDate Selected = " + items.length);
-    // console.log("StartDate = " + JSON.stringify(selectedOptions));
   };
 
   const filterEndDate = (selected: any) => {
@@ -103,49 +90,10 @@ export default function Filter(props: FilterType) {
     });
 
     let items = filterAbsences(selectedOptions);
+    console.log("items = " + items);
     props.filterItems(new Map(items));
-
-    // if (selected.length) {
-    //     selectedOptions.endingDate = selected;
-    // }
-
-    // console.log("EndDate Selected = " + items.length);
-    // console.log("EndDate = " + JSON.stringify(selectedOptions));
   };
 
-  /*
-    const filterItems = (selected: any) => {
-        selected = selected.map((option: any) => {
-            return option.value;
-        });
-
-        _absences = _absences.filter((_absence) => {
-            if (selected.length) {
-                return selected.includes(_absence[1].status);
-            } else {
-                return true;
-            }
-        });
-        props.filterItems(new Map(_absences));
-    };
-
-    const selectStartingDate = (selected: any) => {
-        selected = selected.map((option: any) => {
-            return option.value;
-        });
-
-        _absences = _absences.filter((_absence) => {
-            if (selected.length) {
-                return selected.includes(
-                    new Date(_absence[1].startDate).getMonth()
-                );
-            } else {
-                return true;
-            }
-        });
-        props.filterItems(new Map(_absences));
-    };
-    */
   return (
     <FilterBox>
       <PageSelector>
@@ -212,7 +160,7 @@ const filterAbsences = (filters: FilterOptions) => {
     let ending_date = false;
 
     if (filters.status && filters.status.length) {
-      filters.status.includes(_absence[1].status)
+      filters.status.includes(_absence[1].status, 0)
         ? (status = true)
         : (status = false);
     } else {
@@ -220,7 +168,10 @@ const filterAbsences = (filters: FilterOptions) => {
     }
 
     if (filters.startingDate && filters.startingDate.length) {
-      filters.startingDate.includes(new Date(_absence[1].startDate).getMonth())
+      filters.startingDate.includes(
+        new Date(_absence[1].startDate).getMonth(),
+        0
+      )
         ? (starting_date = true)
         : (starting_date = false);
     } else {
@@ -228,7 +179,7 @@ const filterAbsences = (filters: FilterOptions) => {
     }
 
     if (filters.endingDate && filters.endingDate.length) {
-      filters.endingDate.includes(new Date(_absence[1].endDate).getMonth())
+      filters.endingDate.includes(new Date(_absence[1].endDate).getMonth(), 0)
         ? (ending_date = true)
         : (ending_date = false);
     } else {
@@ -242,8 +193,8 @@ const filterAbsences = (filters: FilterOptions) => {
     return acc;
   }, Array<[number, Absence]>());
 
-  console.log("filters = " + JSON.stringify(filters));
-  console.log("absences = " + absences);
+  // console.log("filters = " + JSON.stringify(filters));
+  // console.log("absences = " + absences);
 
   return absences;
 };
