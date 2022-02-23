@@ -6,6 +6,10 @@ export const TextArea = styled.textarea`
   rows: 10;
   readonly: true;
   border-radius: 10px;
+  padding: 10px 10px;
+  :focus {
+    outline-color: ${({ theme }) => theme.palettes.primary};
+  }
 `;
 
 export const NoteWrapper = styled.div`

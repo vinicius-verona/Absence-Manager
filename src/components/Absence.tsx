@@ -8,7 +8,7 @@ import {
   TextDiv,
 } from "../styles/Absence";
 import { Absence } from "../data/absences";
-import { Member, MEMBERS } from "../data/members";
+import { MEMBERS } from "../data/members";
 import NoteContainer from "./NoteContainer";
 import Status from "./Status";
 
