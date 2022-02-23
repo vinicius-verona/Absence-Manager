@@ -1,20 +1,16 @@
 import { Member, MEMBERS } from "../data/members";
 import { Absence, ABSENCES, getRange } from "../data/absences";
-import { Content, Dashboard } from "../styles/AbsenceDashboard";
+import {
+  Content,
+  Dashboard,
+  overrideLoading,
+} from "../styles/AbsenceDashboard";
 import { useState, useEffect } from "react";
 import { PulseLoader } from "react-spinners";
 import AbsenceTable from "../components/Absence-Table";
 import Theme from "../styles/Theme";
 import ReactPaginate from "react-paginate";
 import Filter from "../components/Filter";
-
-const overrideLoading = `
-    display: block;
-    margin: 40vmin auto;
-    align-self: center;
-    justify-self: center;
-    border-color: red;
-`;
 
 export default function AbsenceDashboard() {
   let [loading, setLoading] = useState(false);
@@ -84,8 +80,8 @@ export default function AbsenceDashboard() {
                 pageCount={pages}
                 onPageChange={changePage}
                 breakLabel={"..."}
-                previousLabel={"previous"}
-                nextLabel={"next"}
+                previousLabel={"<"}
+                nextLabel={">"}
                 containerClassName={"pagination-container"}
                 breakClassName={"page"}
                 breakLinkClassName={"link"}

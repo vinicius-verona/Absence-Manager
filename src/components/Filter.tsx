@@ -5,6 +5,7 @@ import {
   DateSelector,
   FilterBox,
   PageSelector,
+  selectionTheme,
   TypeSelector,
 } from "../styles/Filter";
 
@@ -27,8 +28,8 @@ const selectedOptions: FilterOptions = {
   endingDate: null,
 };
 export default function Filter(props: FilterType) {
-  console.log("################# FILTER #################");
   const pagesOptions = [
+    { value: 5, label: "5 per page" },
     { value: 10, label: "10 per page" },
     { value: 25, label: "25 per page" },
     { value: 50, label: "50 per page" },
@@ -106,6 +107,7 @@ export default function Filter(props: FilterType) {
           options={pagesOptions}
           onChange={selectPage}
           defaultValue={pagesOptions[0]}
+          theme={selectionTheme}
         />
       </PageSelector>
 
@@ -119,6 +121,7 @@ export default function Filter(props: FilterType) {
           components={makeAnimated()}
           options={statusOptions}
           onChange={filterStatus}
+          theme={selectionTheme}
         />
       </TypeSelector>
 
@@ -132,6 +135,7 @@ export default function Filter(props: FilterType) {
           components={makeAnimated()}
           options={dateOptions}
           onChange={filterStartDate}
+          theme={selectionTheme}
         />
       </DateSelector>
 
@@ -145,6 +149,7 @@ export default function Filter(props: FilterType) {
           components={makeAnimated()}
           options={dateOptions}
           onChange={filterEndDate}
+          theme={selectionTheme}
         />
       </DateSelector>
 
@@ -192,9 +197,6 @@ const filterAbsences = (filters: FilterOptions) => {
 
     return acc;
   }, Array<[number, Absence]>());
-
-  // console.log("filters = " + JSON.stringify(filters));
-  // console.log("absences = " + absences);
 
   return absences;
 };

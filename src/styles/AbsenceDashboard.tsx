@@ -49,6 +49,7 @@ export const Dashboard = styled.div`
 
     :hover {
       background-color: ${({ theme }) => theme.palettes.lightPrimary};
+      box-shadow: 1px 1px 5px ${({ theme }) => theme.palettes.lightPrimary};
     }
   }
 
@@ -61,5 +62,19 @@ export const Dashboard = styled.div`
 export const Content = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+`;
+
+// Used as string as requested by react-spinners
+export const overrideLoading = `
+    display: block;
+    margin: 40vmin auto;
+    align-self: center;
+    justify-self: center;
+    border-color: red;
 `;
