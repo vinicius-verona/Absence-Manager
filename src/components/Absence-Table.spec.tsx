@@ -1,9 +1,9 @@
-import { render } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 import { Absence } from "../data/absences";
 import { Member, MEMBERS } from "../data/members";
+import userEvent from "@testing-library/user-event";
 import Theme from "../styles/Theme";
-import AbsenceInfo from "./Absence";
 import AbsenceTable from "./Absence-Table";
 
 describe("Render absence table on page", () => {
@@ -48,7 +48,7 @@ describe("Render absence table on page", () => {
     expect(getByTestId("absence-table")).toBeInTheDocument();
   });
 
-  it("Should render absence row", async () => {
+  it("Should render absence row", () => {
     const { getByText } = render(
       <ThemeProvider theme={Theme}>
         <AbsenceTable absences={absences} members={members} />
@@ -60,5 +60,19 @@ describe("Render absence table on page", () => {
     expect(getByText(member.crewId)).toBeInTheDocument();
     expect(getByText(absence.type)).toBeInTheDocument();
     expect(getByText(absence.status)).toBeInTheDocument();
+  });
+
+  it("Should render modal for selected absence", async () => {
+    const { getByText } = render(
+      <ThemeProvider theme={Theme}>
+        <AbsenceTable absences={absences} members={members} />
+      </ThemeProvider>
+    );
+
+    expect(getByText(absence.id)).toBeInTheDocument();
+    userEvent.click(getByText(absence.id));
+    waitFor(() => {
+      expect(getByText(`Absence ${absence.id}`)).toBeInTheDocument();
+    });
   });
 });

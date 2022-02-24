@@ -16,7 +16,7 @@ describe("Render filters container on page", () => {
   });
 
   it("Should render status filter", () => {
-    const { getByText, getByLabelText } = render(
+    const { getByText, getByLabelText, container } = render(
       <ThemeProvider theme={Theme}>
         <Filter setItemsPerPage={() => {}} filterItems={() => {}} />
       </ThemeProvider>
