@@ -52,21 +52,22 @@ export default function AbsenceDashboard() {
   };
 
   return (
-    <Dashboard>
+    <Dashboard data-testid={"dashboard-container"}>
       {loading ? (
         <PulseLoader
           css={overrideLoading}
           color={Theme.palettes.primary}
           loading={loading}
           size={20}
+          aria-label={"loading-page"}
         />
       ) : (
-        <Content>
+        <Content data-testid={"dashboard-content-container"}>
           <Filter
             setItemsPerPage={changePageLength}
             filterItems={filterDashboard}
           />
-          <div>
+          <div data-testod={"dashboard-content"}>
             <p>
               Total number of absences in page: <strong>{absences.size}</strong>{" "}
               out of <strong>{absences_length}</strong>.
