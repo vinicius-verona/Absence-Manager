@@ -29,7 +29,6 @@ const selectedOptions: FilterOptions = {
 };
 export default function Filter(props: FilterType) {
   const pagesOptions = [
-    { value: 5, label: "5 per page" },
     { value: 10, label: "10 per page" },
     { value: 25, label: "25 per page" },
     { value: 50, label: "50 per page" },

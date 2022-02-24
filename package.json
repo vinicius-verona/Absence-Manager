@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "precommit": "pretty-quick --staged"
+    "precommit": "pretty-quick --staged",
+    "test": "jest"
   },
   "dependencies": {
     "@types/react-paginate": "^7.1.1",
@@ -19,6 +20,11 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@swc/core": "^1.2.144",
+    "@swc/jest": "^0.2.17",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3",
+    "@testing-library/user-event": "^13.5.0",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.10",
     "@types/styled-components": "^5.1.23",
@@ -28,9 +34,11 @@
     "eslint-config-standard-with-typescript": "^21.0.1",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
+    "jest": "^27.5.1",
     "lint-staged": "^12.3.4",
     "prettier": "^2.5.1",
     "pretty-quick": "^3.1.3",
+    "ts-node": "^10.5.0",
     "typescript": "^4.5.4",
     "vite": "^2.8.0"
   }
