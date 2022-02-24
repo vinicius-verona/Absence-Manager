@@ -89,4 +89,26 @@ describe("Render absence modal on page", () => {
 
     expect(queryByTestId("admitter-note")).not.toBeInTheDocument();
   });
+
+  it("Should render absence' member note", () => {
+    absence.memberNote = "Member note test";
+    const { getByTestId } = render(
+      <ThemeProvider theme={Theme}>
+        <AbsenceInfo absence={absence} onChange={() => {}} />
+      </ThemeProvider>
+    );
+
+    expect(getByTestId("member-note")).toBeInTheDocument();
+  });
+
+  it("Should render absence' admitter note", () => {
+    absence.admitterNote = "Admitter note test";
+    const { getByTestId } = render(
+      <ThemeProvider theme={Theme}>
+        <AbsenceInfo absence={absence} onChange={() => {}} />
+      </ThemeProvider>
+    );
+
+    expect(getByTestId("admitter-note")).toBeInTheDocument();
+  });
 });
