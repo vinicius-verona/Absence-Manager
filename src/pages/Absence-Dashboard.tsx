@@ -63,7 +63,6 @@ export default function AbsenceDashboard() {
       ) : (
         <Content>
           <Filter
-            currentPerPage={items_per_page}
             setItemsPerPage={changePageLength}
             filterItems={filterDashboard}
           />
