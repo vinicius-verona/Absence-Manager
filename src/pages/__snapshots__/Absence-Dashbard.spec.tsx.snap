@@ -1,0 +1,835 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render absence dashboard modal on page Should match dashboard snapshot 1`] = `
+<div
+  className="sc-bdvvtL eRPRiX"
+  data-testid="dashboard-container"
+>
+  <div
+    className="sc-gsDKAQ ffoHrR"
+    data-testid="dashboard-content-container"
+  >
+    <div
+      className="sc-egiyK ivRxBV"
+    >
+      <div
+        className="sc-bqiRlB chHtNW"
+      >
+        <p>
+          <strong>
+            Number of absences:
+          </strong>
+        </p>
+        <div
+          className=" css-b62m3t-container"
+          onKeyDown={[Function]}
+        >
+          <span
+            className="css-1f43avz-a11yText-A11yText"
+            id="react-select-2-live-region"
+          />
+          <span
+            aria-atomic="false"
+            aria-live="polite"
+            aria-relevant="additions text"
+            className="css-1f43avz-a11yText-A11yText"
+          />
+          <div
+            className=" css-1s2u09g-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <div
+              className=" css-319lph-ValueContainer"
+            >
+              <div
+                className=" css-qc6sy-singleValue"
+                style={
+                  Object {
+                    "opacity": 1,
+                    "transition": "opacity 1ms",
+                  }
+                }
+              >
+                10 per page
+              </div>
+              <div
+                className=" css-6j8wv5-Input"
+                data-value=""
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="react-select-2-listbox"
+                  aria-expanded={false}
+                  aria-haspopup={true}
+                  aria-label="items-per-page"
+                  aria-owns="react-select-2-listbox"
+                  autoCapitalize="none"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  className=""
+                  disabled={false}
+                  id="react-select-2-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  role="combobox"
+                  spellCheck="false"
+                  style={
+                    Object {
+                      "background": 0,
+                      "border": 0,
+                      "color": "inherit",
+                      "font": "inherit",
+                      "gridArea": "1 / 2",
+                      "label": "input",
+                      "margin": 0,
+                      "minWidth": "2px",
+                      "opacity": 1,
+                      "outline": 0,
+                      "padding": 0,
+                      "width": "100%",
+                    }
+                  }
+                  tabIndex={0}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className=" css-1hb7zxy-IndicatorsContainer"
+            >
+              <span
+                className=" css-1okebmr-indicatorSeparator"
+              />
+              <div
+                aria-hidden="true"
+                className=" css-tlfecz-indicatorContainer"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="css-tj5bde-Svg"
+                  focusable="false"
+                  height={20}
+                  viewBox="0 0 20 20"
+                  width={20}
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-ksdxgE hlZjny"
+      >
+        <p>
+          <strong>
+            Absence status:
+          </strong>
+        </p>
+        <div
+          className=" css-b62m3t-container"
+          onKeyDown={[Function]}
+        >
+          <span
+            className="css-1f43avz-a11yText-A11yText"
+            id="react-select-3-live-region"
+          />
+          <span
+            aria-atomic="false"
+            aria-live="polite"
+            aria-relevant="additions text"
+            className="css-1f43avz-a11yText-A11yText"
+          />
+          <div
+            className=" css-1s2u09g-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <div
+              className=" css-319lph-ValueContainer"
+              style={
+                Object {
+                  "display": "grid",
+                }
+              }
+            >
+              <div
+                className=" css-14el2xx-placeholder"
+                id="react-select-3-placeholder"
+              >
+                Status
+              </div>
+              <div
+                className=" css-6j8wv5-Input"
+                data-value=""
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="react-select-3-listbox"
+                  aria-describedby="react-select-3-placeholder"
+                  aria-expanded={false}
+                  aria-haspopup={true}
+                  aria-label="status"
+                  aria-owns="react-select-3-listbox"
+                  autoCapitalize="none"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  className=""
+                  disabled={false}
+                  id="react-select-3-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  role="combobox"
+                  spellCheck="false"
+                  style={
+                    Object {
+                      "background": 0,
+                      "border": 0,
+                      "color": "inherit",
+                      "font": "inherit",
+                      "gridArea": "1 / 2",
+                      "label": "input",
+                      "margin": 0,
+                      "minWidth": "2px",
+                      "opacity": 1,
+                      "outline": 0,
+                      "padding": 0,
+                      "width": "100%",
+                    }
+                  }
+                  tabIndex={0}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className=" css-1hb7zxy-IndicatorsContainer"
+            >
+              <span
+                className=" css-1okebmr-indicatorSeparator"
+              />
+              <div
+                aria-hidden="true"
+                className=" css-tlfecz-indicatorContainer"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="css-tj5bde-Svg"
+                  focusable="false"
+                  height={20}
+                  viewBox="0 0 20 20"
+                  width={20}
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-hBUSln jyecva"
+      >
+        <p>
+          <strong>
+            Starting date:
+          </strong>
+        </p>
+        <div
+          className=" css-b62m3t-container"
+          onKeyDown={[Function]}
+        >
+          <span
+            className="css-1f43avz-a11yText-A11yText"
+            id="react-select-4-live-region"
+          />
+          <span
+            aria-atomic="false"
+            aria-live="polite"
+            aria-relevant="additions text"
+            className="css-1f43avz-a11yText-A11yText"
+          />
+          <div
+            className=" css-1s2u09g-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <div
+              className=" css-319lph-ValueContainer"
+              style={
+                Object {
+                  "display": "grid",
+                }
+              }
+            >
+              <div
+                className=" css-14el2xx-placeholder"
+                id="react-select-4-placeholder"
+              >
+                Starting date
+              </div>
+              <div
+                className=" css-6j8wv5-Input"
+                data-value=""
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="react-select-4-listbox"
+                  aria-describedby="react-select-4-placeholder"
+                  aria-expanded={false}
+                  aria-haspopup={true}
+                  aria-label="starting-date"
+                  aria-owns="react-select-4-listbox"
+                  autoCapitalize="none"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  className=""
+                  disabled={false}
+                  id="react-select-4-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  role="combobox"
+                  spellCheck="false"
+                  style={
+                    Object {
+                      "background": 0,
+                      "border": 0,
+                      "color": "inherit",
+                      "font": "inherit",
+                      "gridArea": "1 / 2",
+                      "label": "input",
+                      "margin": 0,
+                      "minWidth": "2px",
+                      "opacity": 1,
+                      "outline": 0,
+                      "padding": 0,
+                      "width": "100%",
+                    }
+                  }
+                  tabIndex={0}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className=" css-1hb7zxy-IndicatorsContainer"
+            >
+              <span
+                className=" css-1okebmr-indicatorSeparator"
+              />
+              <div
+                aria-hidden="true"
+                className=" css-tlfecz-indicatorContainer"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="css-tj5bde-Svg"
+                  focusable="false"
+                  height={20}
+                  viewBox="0 0 20 20"
+                  width={20}
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-hBUSln jyecva"
+      >
+        <p>
+          <strong>
+            Ending date:
+          </strong>
+        </p>
+        <div
+          className=" css-b62m3t-container"
+          onKeyDown={[Function]}
+        >
+          <span
+            className="css-1f43avz-a11yText-A11yText"
+            id="react-select-5-live-region"
+          />
+          <span
+            aria-atomic="false"
+            aria-live="polite"
+            aria-relevant="additions text"
+            className="css-1f43avz-a11yText-A11yText"
+          />
+          <div
+            className=" css-1s2u09g-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <div
+              className=" css-319lph-ValueContainer"
+              style={
+                Object {
+                  "display": "grid",
+                }
+              }
+            >
+              <div
+                className=" css-14el2xx-placeholder"
+                id="react-select-5-placeholder"
+              >
+                Ending date
+              </div>
+              <div
+                className=" css-6j8wv5-Input"
+                data-value=""
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-controls="react-select-5-listbox"
+                  aria-describedby="react-select-5-placeholder"
+                  aria-expanded={false}
+                  aria-haspopup={true}
+                  aria-label="ending-date"
+                  aria-owns="react-select-5-listbox"
+                  autoCapitalize="none"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  className=""
+                  disabled={false}
+                  id="react-select-5-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  role="combobox"
+                  spellCheck="false"
+                  style={
+                    Object {
+                      "background": 0,
+                      "border": 0,
+                      "color": "inherit",
+                      "font": "inherit",
+                      "gridArea": "1 / 2",
+                      "label": "input",
+                      "margin": 0,
+                      "minWidth": "2px",
+                      "opacity": 1,
+                      "outline": 0,
+                      "padding": 0,
+                      "width": "100%",
+                    }
+                  }
+                  tabIndex={0}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className=" css-1hb7zxy-IndicatorsContainer"
+            >
+              <span
+                className=" css-1okebmr-indicatorSeparator"
+              />
+              <div
+                aria-hidden="true"
+                className=" css-tlfecz-indicatorContainer"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="css-tj5bde-Svg"
+                  focusable="false"
+                  height={20}
+                  viewBox="0 0 20 20"
+                  width={20}
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-hBUSln jyecva"
+      />
+    </div>
+    <div
+      data-testod="dashboard-content"
+    >
+      <p>
+        Total number of absences in page: 
+        <strong>
+          10
+        </strong>
+         
+        out of 
+        <strong>
+          42
+        </strong>
+        .
+      </p>
+      <table
+        className="sc-hKwDye gVDxtK"
+        data-testid="absence-table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Absence
+            </th>
+            <th>
+              Member
+            </th>
+            <th>
+              Crew
+            </th>
+            <th>
+              Type
+            </th>
+            <th>
+              Status
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            className=""
+            onClick={[Function]}
+          >
+            <td>
+              2351
+            </td>
+            <td>
+              Mike
+            </td>
+            <td>
+              352
+            </td>
+            <td>
+              sickness
+            </td>
+            <td>
+              Confirmed
+            </td>
+          </tr>
+          <tr
+            className="dark-row"
+            onClick={[Function]}
+          >
+            <td>
+              2521
+            </td>
+            <td>
+              Mike
+            </td>
+            <td>
+              352
+            </td>
+            <td>
+              vacation
+            </td>
+            <td>
+              Rejected
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+          >
+            <td>
+              2634
+            </td>
+            <td>
+              Ines
+            </td>
+            <td>
+              352
+            </td>
+            <td>
+              vacation
+            </td>
+            <td>
+              Confirmed
+            </td>
+          </tr>
+          <tr
+            className="dark-row"
+            onClick={[Function]}
+          >
+            <td>
+              2904
+            </td>
+            <td>
+              Daniel
+            </td>
+            <td>
+              352
+            </td>
+            <td>
+              vacation
+            </td>
+            <td>
+              Rejected
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+          >
+            <td>
+              2909
+            </td>
+            <td>
+              Sandra
+            </td>
+            <td>
+              352
+            </td>
+            <td>
+              vacation
+            </td>
+            <td>
+              Confirmed
+            </td>
+          </tr>
+          <tr
+            className="dark-row"
+            onClick={[Function]}
+          >
+            <td>
+              2942
+            </td>
+            <td>
+              Mike
+            </td>
+            <td>
+              352
+            </td>
+            <td>
+              vacation
+            </td>
+            <td>
+              Confirmed
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+          >
+            <td>
+              2943
+            </td>
+            <td>
+              Mike
+            </td>
+            <td>
+              352
+            </td>
+            <td>
+              vacation
+            </td>
+            <td>
+              Confirmed
+            </td>
+          </tr>
+          <tr
+            className="dark-row"
+            onClick={[Function]}
+          >
+            <td>
+              2955
+            </td>
+            <td>
+              Manuel
+            </td>
+            <td>
+              352
+            </td>
+            <td>
+              vacation
+            </td>
+            <td>
+              Confirmed
+            </td>
+          </tr>
+          <tr
+            className=""
+            onClick={[Function]}
+          >
+            <td>
+              3229
+            </td>
+            <td>
+              Mike
+            </td>
+            <td>
+              352
+            </td>
+            <td>
+              vacation
+            </td>
+            <td>
+              Confirmed
+            </td>
+          </tr>
+          <tr
+            className="dark-row"
+            onClick={[Function]}
+          >
+            <td>
+              3235
+            </td>
+            <td>
+              Max
+            </td>
+            <td>
+              352
+            </td>
+            <td>
+              sickness
+            </td>
+            <td>
+              Rejected
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul
+        className="pagination-container"
+      >
+        <li
+          className="page disabled"
+        >
+          <a
+            aria-disabled="true"
+            aria-label="Previous page"
+            className="link "
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            rel="prev"
+            role="button"
+            tabIndex="-1"
+          >
+            &lt;
+          </a>
+        </li>
+        <li
+          className="page active-page"
+        >
+          <a
+            aria-current="page"
+            aria-label="Page 1 is your current page"
+            className="link"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            rel="canonical"
+            role="button"
+            tabIndex="-1"
+          >
+            1
+          </a>
+        </li>
+        <li
+          className="page"
+        >
+          <a
+            aria-current={null}
+            aria-label="Page 2"
+            className="link"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            rel="next"
+            role="button"
+            tabIndex="0"
+          >
+            2
+          </a>
+        </li>
+        <li
+          className="page"
+        >
+          <a
+            aria-current={null}
+            aria-label="Page 3"
+            className="link"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex="0"
+          >
+            3
+          </a>
+        </li>
+        <li
+          className="page"
+        >
+          <a
+            aria-current={null}
+            aria-label="Page 4"
+            className="link"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex="0"
+          >
+            4
+          </a>
+        </li>
+        <li
+          className="page"
+        >
+          <a
+            aria-current={null}
+            aria-label="Page 5"
+            className="link"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            role="button"
+            tabIndex="0"
+          >
+            5
+          </a>
+        </li>
+        <li
+          className="page"
+        >
+          <a
+            aria-disabled="false"
+            aria-label="Next page"
+            className="link"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            rel="next"
+            role="button"
+            tabIndex="0"
+          >
+            &gt;
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

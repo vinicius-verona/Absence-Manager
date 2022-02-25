@@ -1,6 +1,7 @@
 import { Member, MEMBERS } from "../data/members";
 import { Absence, ABSENCES, getRange } from "../data/absences";
 import {
+  Error,
   Content,
   Dashboard,
   overrideLoading,
@@ -13,6 +14,18 @@ import ReactPaginate from "react-paginate";
 import Filter from "../components/Filter";
 
 export default function AbsenceDashboard() {
+  if (!MEMBERS || !ABSENCES || !MEMBERS.size || !ABSENCES.size) {
+    return (
+      <Dashboard data-testid={"dashboard-container"}>
+        <Error>
+          <p>
+            <strong>Error!</strong> The necessary data have not been found
+          </p>
+        </Error>
+      </Dashboard>
+    );
+  }
+
   let [loading, setLoading] = useState(false);
   let [offset, setOffset] = useState(0);
   let [absences, setAbsences] = useState(new Map<number, Absence>());
@@ -52,22 +65,22 @@ export default function AbsenceDashboard() {
   };
 
   return (
-    <Dashboard>
+    <Dashboard data-testid={"dashboard-container"}>
       {loading ? (
         <PulseLoader
           css={overrideLoading}
           color={Theme.palettes.primary}
           loading={loading}
           size={20}
+          aria-label={"loading-page"}
         />
       ) : (
-        <Content>
+        <Content data-testid={"dashboard-content-container"}>
           <Filter
-            currentPerPage={items_per_page}
             setItemsPerPage={changePageLength}
             filterItems={filterDashboard}
           />
-          <div>
+          <div data-testod={"dashboard-content"}>
             <p>
               Total number of absences in page: <strong>{absences.size}</strong>{" "}
               out of <strong>{absences_length}</strong>.

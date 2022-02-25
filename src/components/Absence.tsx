@@ -54,7 +54,11 @@ export default function AbsenceInfo(props: InfoCard) {
       <AbsenceCard key={_id + "-Card"}>
         <Header>
           <h2 key={_id + "-CardTitle"}>Absence {_id}</h2>
-          <CloseBttn key={_id + "-Bttn"} onClick={close}>
+          <CloseBttn
+            key={_id + "-Bttn"}
+            onClick={close}
+            data-testid={"exit-button"}
+          >
             &times;
           </CloseBttn>
         </Header>
@@ -95,9 +99,9 @@ const Text = (props: InfoType) => {
   return (
     <TextDiv>
       <label>
-        <strong>{props.label}</strong>
+        <strong data-testid={"content-label"}>{props.label}</strong>
       </label>
-      <p>{props.content}</p>
+      <p data-testid={"content-value"}>{props.content}</p>
     </TextDiv>
   );
 };
@@ -116,7 +120,7 @@ const MsgContainer = (props: MsgInfo) => {
   return (
     <Message className={className}>
       {props.absence.memberNote.length > 0 && (
-        <div>
+        <div data-testid={"member-note"}>
           <NoteContainer
             label={"Member Note"}
             content={props.absence.memberNote}
@@ -124,7 +128,7 @@ const MsgContainer = (props: MsgInfo) => {
         </div>
       )}
       {props.absence.admitterNote.length > 0 && (
-        <div>
+        <div data-testid={"admitter-note"}>
           <NoteContainer
             label={"Admitter Note"}
             content={props.absence.admitterNote}

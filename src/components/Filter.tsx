@@ -10,7 +10,6 @@ import {
 } from "../styles/Filter";
 
 type FilterType = {
-  currentPerPage: number;
   setItemsPerPage(maxPerPage: number): void;
   filterItems(absences: Map<number, Absence>): void;
 };
@@ -29,7 +28,6 @@ const selectedOptions: FilterOptions = {
 };
 export default function Filter(props: FilterType) {
   const pagesOptions = [
-    { value: 5, label: "5 per page" },
     { value: 10, label: "10 per page" },
     { value: 25, label: "25 per page" },
     { value: 50, label: "50 per page" },
@@ -108,6 +106,8 @@ export default function Filter(props: FilterType) {
           onChange={selectPage}
           defaultValue={pagesOptions[0]}
           theme={selectionTheme}
+          placeholder={"Items per page"}
+          aria-label={"items-per-page"}
         />
       </PageSelector>
 
@@ -122,6 +122,8 @@ export default function Filter(props: FilterType) {
           options={statusOptions}
           onChange={filterStatus}
           theme={selectionTheme}
+          placeholder={"Status"}
+          aria-label={"status"}
         />
       </TypeSelector>
 
@@ -136,6 +138,8 @@ export default function Filter(props: FilterType) {
           options={dateOptions}
           onChange={filterStartDate}
           theme={selectionTheme}
+          placeholder={"Starting date"}
+          aria-label={"starting-date"}
         />
       </DateSelector>
 
@@ -150,6 +154,8 @@ export default function Filter(props: FilterType) {
           options={dateOptions}
           onChange={filterEndDate}
           theme={selectionTheme}
+          placeholder={"Ending date"}
+          aria-label={"ending-date"}
         />
       </DateSelector>
 

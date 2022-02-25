@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Dashboard = styled.div`
   display: block;
-  width: 100%;
+  width: 100vw;
   min-width: 500px;
   align-items: center;
   justify-content: center;
@@ -77,4 +77,18 @@ export const overrideLoading = `
     align-self: center;
     justify-self: center;
     border-color: red;
+`;
+
+export const Error = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 30vmin auto;
+  font-size: 1.5rem;
+
+  strong {
+    color: ${({ theme }) => theme.palettes.primary};
+  }
 `;

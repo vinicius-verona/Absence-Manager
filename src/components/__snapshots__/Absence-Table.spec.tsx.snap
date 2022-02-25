@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render absence table on page Should match absence table snapshot 1`] = `
+<table
+  className="sc-bdvvtL ecXJRw"
+  data-testid="absence-table"
+>
+  <thead>
+    <tr>
+      <th>
+        Absence
+      </th>
+      <th>
+        Member
+      </th>
+      <th>
+        Crew
+      </th>
+      <th>
+        Type
+      </th>
+      <th>
+        Status
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      className=""
+      onClick={[Function]}
+    >
+      <td>
+        2351
+      </td>
+      <td>
+        Mike
+      </td>
+      <td>
+        352
+      </td>
+      <td>
+        sickness
+      </td>
+      <td>
+        Confirmed
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
