@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render absence' note container Should match note container snapshot 1`] = `
+<div
+  className="sc-gsDKAQ fIdEjT"
+>
+  <label>
+    <strong>
+      Member:
+    </strong>
+  </label>
+  <textarea
+    className="sc-bdvvtL cReOru"
+    readOnly={true}
+    value=""
+  />
+</div>
+`;

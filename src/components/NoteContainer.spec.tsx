@@ -1,9 +1,22 @@
 import { render, screen } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
+import renderer from "react-test-renderer";
 import Theme from "../styles/Theme";
 import NoteContainer from "./NoteContainer";
 
 describe("Render absence' note container", () => {
+  it("Should match note container snapshot", () => {
+    const container = renderer
+      .create(
+        <ThemeProvider theme={Theme}>
+          <NoteContainer label={"Member:"} content={""} />
+        </ThemeProvider>
+      )
+      .toJSON();
+
+    expect(container).toMatchSnapshot();
+  });
+
   it("Should render label 'Member:'", () => {
     const { getByText } = render(
       <ThemeProvider theme={Theme}>

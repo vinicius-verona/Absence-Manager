@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render absence' status Should match status snapshot 1`] = `
+<div>
+  <label>
+    <strong>
+      Status: 
+    </strong>
+  </label>
+  <label
+    className="sc-bdvvtL hKoNsd"
+  >
+    Confirmed
+  </label>
+</div>
+`;

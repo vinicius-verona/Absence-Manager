@@ -2,6 +2,7 @@ import { render, waitFor } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 import { Absence } from "../data/absences";
 import { Member, MEMBERS } from "../data/members";
+import renderer from "react-test-renderer";
 import userEvent from "@testing-library/user-event";
 import Theme from "../styles/Theme";
 import AbsenceTable from "./Absence-Table";
@@ -37,6 +38,18 @@ describe("Render absence table on page", () => {
   if (!member) {
     throw "Member not found";
   }
+
+  it("Should match absence table snapshot", () => {
+    const table = renderer
+      .create(
+        <ThemeProvider theme={Theme}>
+          <AbsenceTable absences={absences} members={members} />
+        </ThemeProvider>
+      )
+      .toJSON();
+
+    expect(table).toMatchSnapshot();
+  });
 
   it("Should render table", () => {
     const { getByTestId } = render(

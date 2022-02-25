@@ -1,10 +1,23 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 import userEvent from "@testing-library/user-event";
+import renderer from "react-test-renderer";
 import Theme from "../styles/Theme";
 import AbsenceDashboard from "./Absence-Dashboard";
 
 describe("Render absence dashboard modal on page", () => {
+  it("Should match dashboard snapshot", () => {
+    const dashboard = renderer
+      .create(
+        <ThemeProvider theme={Theme}>
+          <AbsenceDashboard />
+        </ThemeProvider>
+      )
+      .toJSON();
+
+    expect(dashboard).toMatchSnapshot();
+  });
+
   it("Should render dashboard container", () => {
     const { getByTestId } = render(
       <ThemeProvider theme={Theme}>

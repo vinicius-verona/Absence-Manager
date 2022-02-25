@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render absence modal on page Should match absence modal snapshot 1`] = `
+<div
+  className="sc-bdvvtL iqTnBm"
+>
+  <div
+    className="sc-gsDKAQ ehuVlV"
+  >
+    <div
+      className="sc-dkPtRN gTDRQT"
+    >
+      <h2>
+        Absence 
+        2351
+      </h2>
+      <span
+        className="sc-hKwDye cPklVU"
+        data-testid="exit-button"
+        onClick={[Function]}
+      >
+        ×
+      </span>
+    </div>
+    <div
+      className="sc-eCImPb bThuHP"
+    >
+      <div
+        className="sc-jRQBWg dRDJKa"
+      >
+        <label>
+          <strong
+            data-testid="content-label"
+          >
+            Member: 
+          </strong>
+        </label>
+        <p
+          data-testid="content-value"
+        >
+          Mike
+        </p>
+      </div>
+      <div
+        className="sc-jRQBWg dRDJKa"
+      >
+        <label>
+          <strong
+            data-testid="content-label"
+          >
+            User ID: 
+          </strong>
+        </label>
+        <p
+          data-testid="content-value"
+        >
+          2664
+        </p>
+      </div>
+      <div
+        className="sc-jRQBWg dRDJKa"
+      >
+        <label>
+          <strong
+            data-testid="content-label"
+          >
+            Type: 
+          </strong>
+        </label>
+        <p
+          data-testid="content-value"
+        >
+          sickness
+        </p>
+      </div>
+      <div
+        className="sc-jRQBWg dRDJKa"
+      >
+        <label>
+          <strong
+            data-testid="content-label"
+          >
+            Start Date: 
+          </strong>
+        </label>
+        <p
+          data-testid="content-value"
+        >
+          2021-01-13
+        </p>
+      </div>
+      <div
+        className="sc-jRQBWg dRDJKa"
+      >
+        <label>
+          <strong
+            data-testid="content-label"
+          >
+            End Date: 
+          </strong>
+        </label>
+        <p
+          data-testid="content-value"
+        >
+          2021-01-13
+        </p>
+      </div>
+      <div>
+        <label>
+          <strong>
+            Status: 
+          </strong>
+        </label>
+        <label
+          className="sc-pVTFL dumrIL"
+        >
+          Confirmed
+        </label>
+      </div>
+    </div>
+    <div
+      className="sc-gKclnd iwXWZs centered"
+    />
+  </div>
+</div>
+`;

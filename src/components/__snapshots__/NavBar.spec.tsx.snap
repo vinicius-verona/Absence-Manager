@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render NavBar on page Should match navbar snapshot 1`] = `
+<nav
+  className="sc-bdvvtL hyHtAJ"
+>
+  <img
+    alt="Crewmeister's logo"
+    className="sc-hKwDye jXmRyY logo"
+    src="https://d33wubrfki0l68.cloudfront.net/f140ee3478696725fd905f311242bfc48579b2f5/dcaca/images/logo_crewmeister_white.svg"
+  />
+  <div
+    className="sc-gsDKAQ kHNdgz"
+  >
+    <h1
+      className="sc-dkPtRN fwKpHR"
+    >
+      Absence Manager
+    </h1>
+  </div>
+</nav>
+`;

@@ -1,8 +1,9 @@
 import { render } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
+import { MEMBERS } from "../data/members";
+import renderer from "react-test-renderer";
 import Theme from "../styles/Theme";
 import AbsenceInfo from "./Absence";
-import { MEMBERS } from "../data/members";
 
 describe("Render absence modal on page", () => {
   const absence = {
@@ -26,6 +27,18 @@ describe("Render absence modal on page", () => {
   if (!member) {
     throw "Member not found";
   }
+
+  it("Should match absence modal snapshot", () => {
+    const modal = renderer
+      .create(
+        <ThemeProvider theme={Theme}>
+          <AbsenceInfo absence={absence} onChange={() => {}} />
+        </ThemeProvider>
+      )
+      .toJSON();
+
+    expect(modal).toMatchSnapshot();
+  });
 
   it("Should render exit button", () => {
     const { getByTestId } = render(
