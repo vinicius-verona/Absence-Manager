@@ -17,12 +17,13 @@
 -   Clone or download this repository to your machine;
 -   On the root of the project, run the following commands:
 
-```bash
+```
 npm install # To install project dependencies
 ```
 
-```bash
+```
 npm run dev # To run the project locally
+npm run test # To execute tests
 ```
 
 -   Then, on your browser, access [http://localhost:3000](http://localhost:3000) to see the result.
