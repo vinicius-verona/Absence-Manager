@@ -13,6 +13,10 @@ import Theme from "../styles/Theme";
 import ReactPaginate from "react-paginate";
 import Filter from "../components/Filter";
 
+/**
+ * This is the main page for the application.
+ * It displays the pagination, filtering and absence table.
+ */
 export default function AbsenceDashboard() {
   if (!MEMBERS || !ABSENCES || !MEMBERS.size || !ABSENCES.size) {
     return (

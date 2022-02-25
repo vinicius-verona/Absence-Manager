@@ -10,6 +10,10 @@ type TableContent = {
   members: Map<number, Member>;
 };
 
+/**
+ * Display a table with a list of absences.
+ * @param props - A map of absences and a map of members;
+ */
 export default function AbsenceTable(props: TableContent) {
   let _absences = props.absences;
   let _members = props.members;

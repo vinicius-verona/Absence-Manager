@@ -26,6 +26,17 @@ const selectedOptions: FilterOptions = {
   startingDate: null,
   endingDate: null,
 };
+
+/**
+ * Display the filter container with the following options:
+ * * Total number of absences per page;
+ * * Filter by `status`;
+ * * Filter by `period` (start and end date)
+ *
+ * @param props Callbacks to change the parent component' state
+ * * `setItemsPerPage()` - Change the number of items displayed in a page
+ * * `filterItems()` - Apply the selected filters to the current absences list.
+ */
 export default function Filter(props: FilterType) {
   const pagesOptions = [
     { value: 10, label: "10 per page" },
@@ -89,7 +100,6 @@ export default function Filter(props: FilterType) {
     });
 
     let items = filterAbsences(selectedOptions);
-    console.log("items = " + items);
     props.filterItems(new Map(items));
   };
 

@@ -18,15 +18,15 @@ type InfoCard = {
 };
 
 /**
- * The absence card selected.
- *
- * It displays:
+ * The absence card selected displays:
  * * Member name
  * * Absence type
  * * Absence period
  * * Member note
  * * Status label
  * * Admitter note
+ *
+ * @param props - The selected absence and callback to close and unmount the the card.
  */
 export default function AbsenceInfo(props: InfoCard) {
   const onChange = () => {
@@ -88,8 +88,8 @@ type InfoType = {
  * Display a text with a label and a content.
  *
  * @param props - Is an object with label and content.
- * * `label` - **string**
- * * `content` - **string | number**
+ * * `label` - string
+ * * `content` - string | number
  */
 const Text = (props: InfoType) => {
   if (!props || !props.content) {
@@ -110,6 +110,11 @@ type MsgInfo = {
   absence: Absence;
 };
 
+/**
+ * Display the text-area with the available notes.
+ *
+ * @param props - the absence with the desired note.
+ */
 const MsgContainer = (props: MsgInfo) => {
   let className = "";
 

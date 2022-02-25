@@ -5,6 +5,11 @@ type NoteContent = {
   content: string;
 };
 
+/**
+ * Creates a text-area to display notes.
+ * @param props - the label to be displayed and the content
+ * * props = {`label`: string, `content`: string}
+ */
 export default function NoteContainer(props: NoteContent) {
   return (
     <NoteWrapper>
