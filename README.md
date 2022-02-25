@@ -10,7 +10,7 @@
 
 ## **Requirements:**
 
--   **NPM**: Version `6.14.8` or newer. Available at [NPM Docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+-   **NPM**: Version `8.5.2` or newer. Available at [NPM Docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## **Instructions**
 
