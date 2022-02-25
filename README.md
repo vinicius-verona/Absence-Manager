@@ -23,7 +23,7 @@ npm install # To install project dependencies
 
 ```
 npm run dev # To run the project locally
-npm run test # To execute tests
+npm run test # To execute tests [not required to execute the application]
 ```
 
 -   Then, on your browser, access [http://localhost:3000](http://localhost:3000) to see the result.
