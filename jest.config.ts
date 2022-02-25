@@ -180,12 +180,9 @@ export default {
           parser: {
             syntax: "typescript",
             tsx: true,
-            // decorators: true,
           },
           keepClassNames: true,
           transform: {
-            // legacyDecorators: true,
-            // decoratorMetadata: true,
             react: {
               runtime: "automatic",
             },
